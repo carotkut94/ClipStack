@@ -16,7 +16,7 @@ A simple Menu bar app that watches clipboard and maintains the clipboard history
 
 ## Actions
 
-* Cmd+C put the copies item in stack
+* Cmd+C put the copied item in stack
 * Clicking on Cell, copies the item back to the PasteBoard
 * Individual entried can be deleted, and whole log can be deleted using the bottom action button
 
