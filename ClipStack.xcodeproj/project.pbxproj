@@ -11,6 +11,7 @@
 		E18703602AB882AA00C1BB33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E187035F2AB882AA00C1BB33 /* ContentView.swift */; };
 		E18703622AB882AB00C1BB33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E18703612AB882AB00C1BB33 /* Assets.xcassets */; };
 		E18703652AB882AB00C1BB33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E18703642AB882AB00C1BB33 /* Preview Assets.xcassets */; };
+		E187036E2AB886F700C1BB33 /* OnPasteboardChange in Frameworks */ = {isa = PBXBuildFile; productRef = E187036D2AB886F700C1BB33 /* OnPasteboardChange */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		E18703612AB882AB00C1BB33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E18703642AB882AB00C1BB33 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E18703662AB882AB00C1BB33 /* ClipStack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClipStack.entitlements; sourceTree = "<group>"; };
+		E187036F2AB8976600C1BB33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E187036E2AB886F700C1BB33 /* OnPasteboardChange in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +55,7 @@
 		E187035C2AB882AA00C1BB33 /* ClipStack */ = {
 			isa = PBXGroup;
 			children = (
+				E187036F2AB8976600C1BB33 /* Info.plist */,
 				E187035D2AB882AA00C1BB33 /* ClipStackApp.swift */,
 				E187035F2AB882AA00C1BB33 /* ContentView.swift */,
 				E18703612AB882AB00C1BB33 /* Assets.xcassets */,
@@ -85,6 +89,9 @@
 			dependencies = (
 			);
 			name = ClipStack;
+			packageProductDependencies = (
+				E187036D2AB886F700C1BB33 /* OnPasteboardChange */,
+			);
 			productName = ClipStack;
 			productReference = E187035A2AB882AA00C1BB33 /* ClipStack.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +120,9 @@
 				Base,
 			);
 			mainGroup = E18703512AB882AA00C1BB33;
+			packageReferences = (
+				E187036C2AB886F700C1BB33 /* XCRemoteSwiftPackageReference "OnPasteboardChange" */,
+			);
 			productRefGroup = E187035B2AB882AA00C1BB33 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -274,6 +284,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClipStack/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,6 +313,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClipStack/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -336,6 +350,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E187036C2AB886F700C1BB33 /* XCRemoteSwiftPackageReference "OnPasteboardChange" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kyle-n/OnPasteboardChange";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E187036D2AB886F700C1BB33 /* OnPasteboardChange */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E187036C2AB886F700C1BB33 /* XCRemoteSwiftPackageReference "OnPasteboardChange" */;
+			productName = OnPasteboardChange;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E18703522AB882AA00C1BB33 /* Project object */;
 }
